@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+   
+    <style>
+        body{
+            background-image: linear-gradient(darkslategrey,gray,lavender,steelblue,
+            darkslategrey,darkslateblue);
+        }
+        .main{  
+            display: grid;
+            padding: 10px;
+            background-color: lavender;
+            grid-template-columns:repeat(2,200px);
+           gap: 5px;
+           width: fit-content;  
+           margin-top: 5vh; 
+           margin-left: 50vh;     
+        }
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+            color: white;
+            font-weight: bolder;
+        }
+     .item1{
+        height:90px;
+        width:800px;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      background-color:lightseagreen;
+     
+     }
+     .item2{
+        height:90px;
+        width:800px;
+      grid-column-start: 1;
+      grid-column-end: 6; 
+      background-color: forestgreen;
+     }
+     .item3{
+        height:300px;
+        grid-row-start:3;
+        grid-row-end: 5;
+        background-color: greenyellow
+     }
+     .item4{
+        height:140px;
+        width:590px;
+        grid-column-start: 2;
+        grid-column-end:6;
+        background-color: steelblue;
+     }
+     .item5{
+        height:140px;
+        width:590px;
+        grid-column-start: 2;
+        grid-column-end:6;
+        background-color: darkslateblue;
+     }
+     .item6{
+        height:100px;
+        width:800px;
+        grid-column-start: 6;
+        grid-column-end:1;
+        background-color:lightseagreen;
+     }    
+   .main1{      
+            display: grid;
+            padding: 30px;
+            background-color: white;
+            grid-template-columns: 200px 200px 100px 200px 200px;
+            grid-template-rows:160px 120px 80px 200px;
+            gap: 3px; 
+           height:550px;
+           justify-content: center;
+           width: fit-content;
+           position: relative;
+           top:10vh; 
+           left:40vh;        
+     } 
+        .m1{
+            grid-row-start:1;
+            grid-row-end: 3;
+            background-color:purple;
+        }
+        .m2{
+            grid-column-start: 2;
+            grid-column-end:4;
+            background-color: chocolate;
+          
+        }
+        .m3{
+            grid-column-start:4;
+            grid-column-end:6;
+            background-color: gold;
+        }
+        .m4{
+            grid-row-start:2;
+            grid-row-end:4;
+            background-color: gold;
+        }
+        .m8{
+            grid-row-start:3;
+            grid-row-end:5;
+            background-color: slateblue;
+        }
+        .m5{
+            grid-row-start:2;
+            grid-row-end:4;
+            grid-column-start:3;
+            grid-column-end:5;
+            background-color: slateblue;
+        }
+        .m6{
+            grid-row-start:2;
+            grid-row-end:5;
+            background-color:orangered;
+        }
+        .m7{
+            grid-column-start:2;
+            grid-column-end:4;
+            background-color:purple;
+        }  
+        .m9{
+            background-color: powderblue;
+        } 
+        .main2{  
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns:repeat(2,200px);
+             padding: 30px;
+               gap: 5px; 
+             height:500px;  
+             background-color: white; 
+             width: fit-content; 
+             position: relative;
+             top:20vh;
+             margin-left: 60vh;         
+        }
+        .n1{
+            height:90px;
+            width:600px;
+            grid-column-start:1;
+            grid-column-end:4;
+            background-image: linear-gradient(purple,orchid);
+        }
+        .n2{
+            height:300px;
+          grid-row-start:2;
+          grid-row-end:4; 
+          background-image: linear-gradient( steelblue,cyan,orchid);
+        }
+        .n3{
+            height:90px;
+            width:396px;
+            grid-column-start:2;
+            grid-column-end:4;
+            background-image: linear-gradient(steelblue,cyan,seagreen);
+        }
+        .n4{
+            height:200px;
+            width:200px;
+            grid-row-start:3;
+            grid-column-end:4;
+            background-image: linear-gradient(steelblue,cyan,seagreen);
+        }
+        .n5{
+           height:200px;
+            width:200px;
+            grid-column-start:2;
+            grid-column-end:3;
+            background-image: linear-gradient(steelblue,cyan,seagreen);
+        }
+        .n6{
+            height:90px;
+        width:610px;
+            grid-row-start:4;
+            grid-row-end:4;
+            grid-column-start:1;
+            grid-column-end:4;
+            background-image: linear-gradient(purple,orchid);
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: blue;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>GRID-LAYOUTS</h1>
+     <div class="main">
+      <div class="item item1">Header</div>
+      <div class="item item2">Navigation</div>
+      <div class="item item3">Aside</div>
+      <div class="item item4">Content</div>
+      <div class="item item5">Section</div>
+      <div class="item item6">Footer</div>
+    </div> 
+       <div class="main1">
+        <div class="m m1"></div>
+        <div  class="m m2"></div>
+        <div  class="m m3"></div>
+        <div  class="m m4"></div>
+        <div class="m m5"></div>
+        <div class="m m6"></div>
+        <div class="m m7"></div>
+        <div class="m m8"></div>
+        <div class="m m9"></div>
+    </div>  
+    <div class="main2">
+        <div class="n n1"></div>
+        <div class="n n2"></div>
+        <div class="n n3"></div>
+        <div class="n n4"></div>
+        <div class="n n5"></div>
+        <div class="n n6"></div>
+    </div>
+</body>
+</html>
